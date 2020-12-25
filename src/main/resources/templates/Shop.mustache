@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+<div align="center">
+    <form method="get" action="add">
+        <p><input type="text" name="text" placeholder="Введите заметку" /></p>
+        <p><input type="text" name="tag" placeholder="Тэг"></p>
+        <p><button type="submit" id="btn" value="Добавить">Добавить</button></p>
+    </form>
+</div>
+<div>Список заметок</div>
+{{#notes}}
+    <div>
+        <b id="{{tag}}">{{id}}</b>
+        <span>{{text}}</span>
+        <i>{{tag}}</i>
+    </div>
+{{/notes}}
+<div>
+    <button type="button" id="btn" value="Выйти"><a href="/in/sign_in">Выйти</a></button>
+</div>
+</body>
+</html>

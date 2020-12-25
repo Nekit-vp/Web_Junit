@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign_in</title>
+</head>
+<body align="center">
+<h2>Sign In</h2>
+<div>
+    <form method="get" action="write">
+        <p><input type="text" name="login" placeholder="login"/></p>
+        <p><input type="password" name="password" placeholder="password"/></p>
+        <button type="submit" id="submitButton" value="Sign_in">Sign IN</button>
+        <p class="message">Not registered? <a href="/in/sign_up">Create an account</a></p>
+    </form>
+
+</div>
+<div style="color:#DC143C">
+    {{error}}
+</div>
+</body>
+</html>
